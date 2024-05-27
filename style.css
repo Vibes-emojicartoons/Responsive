@@ -9,7 +9,7 @@ body{
     
 }
 .container{
-    
+    width: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
@@ -51,6 +51,11 @@ body{
     height: 90%;
     background-color: coral
 }
+.me{
+    width: 60%;
+    height: 15%;
+    background-color: darkcyan;
+}
 .name{
     display: flex;
     flex: 1;
@@ -60,6 +65,11 @@ body{
     width: 100%;
     height: 90%;
     background-color: darkcyan
+}
+.about{
+    width: 50%;
+    height: 10%;
+    background-color: azure;
 }
 
 #pictuer{
@@ -327,13 +337,21 @@ background-color: chartreuse;}
     width: 100%;
     height: 100%;
     background-color: yellow;
+    gap: 5%;
 }
 
-#vec{
+.vibestext{
+    place-self: center;
     display: flex;
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 40%;
     background-color: blueviolet;
+}
+.vibesbook{
+    display: flex;
+    width: 95%;
+    height: 60%;
+    background-color: brown;
 }
 .section:nth-child(7) {
     background-color: #2ecc71;
@@ -341,11 +359,147 @@ background-color: chartreuse;}
 }
 
 /* Responsive layout */
-@media (max-width: 768px) {
-    .navbar a {
-        float: none;
+@media (max-width: 390px) {
+    #section1{
+        display: grid;
+        grid-template-row: 100% 100%;
         width: 100%;
-        text-align: left;
-        padding: 14px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #intro{
+        height: 100%;
+        width: 390px;
+        background-color: red;
+    
+    }
+    #pictuer{
+        height: 100%;
+        width: 390px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    #section2 {
+        display: grid;
+        grid-template-rows: 355px 500px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: none;
+    
+    
+    }
+    .textone{
+        height: 100%;
+        width: 390px;
+        
+        background-color: brown;
+    }
+    
+    .texttwo{
+        height: 100%;
+        width: 390px;
+    background-color: chartreuse;}
+
+    #section3{
+        display: grid;
+        grid-template-rows: 250px 600px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    
+    }
+    #career{
+        justify-content: center;
+        width: 390px;
+        height: 250px;
+    }
+    #arsenal{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 605px;
+        background-color: indigo;
+        gap: 1rem;
+    }
+    #section4{
+        display: grid;
+        grid-template-rows: 250px 600px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+    }
+    #myvoice{
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 600px;
+        background-color: orange;
+    }
+    #mvtext{
+        
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 250px;
+        background-color: red;
+    }
+    #section5{
+        display: grid;
+        grid-template-rows: 250px 600px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+    }
+    #mfmtext{
+        place-self: center;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        height: 100%;
+        background-color: purple;
+    }
+    #mfmpic{
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 90%;
+        background-color: pink;
+    }
+    #section6{
+        display: grid;
+        grid-template-columns: 140px 260px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    #yamtext{
+        place-self: center;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 50%;
+        background-color: chocolate;
+    }
+    #yampic{
+        place-self: center;
+        justify-content: center;
+        flex: 1;
+        width: 260px;
+        height: 100%;
+        background-color: cadetblue;
     }
 }
