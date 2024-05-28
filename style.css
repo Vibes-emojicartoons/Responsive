@@ -6,12 +6,15 @@ body{
         height: 100vh;
         display: flex;
         justify-content: center;
+        
     
 }
 .container{
     width: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    padding: 0;
+    margin: 0;
 }
 .section{
     flex: 0 0 100vh;
@@ -35,13 +38,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 2;
-    width: 60%;
+    flex: 1;
+    width: 50%;
     height: 80%;
     background-color: cadetblue;
-    gap: 1rem;
+    
 }
-.welcome{
+.eish{
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -49,35 +52,59 @@ body{
     align-items: center;
     width: 100%;
     height: 90%;
-    background-color: coral
+    background-color: coral;
+    
+}
+.welcome{
+    text-align: center;
+    justify-content: center;
+    font-size: 150pt;
+    width: 80%;
+    height: 60%;
+    font-family: Rancho Regular;
 }
 .me{
-    width: 60%;
-    height: 15%;
+    font-family: Auster;
+    font-weight: medium;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 70%;
+    height: 25%;
+    font-size: 25pt;
     background-color: darkcyan;
 }
 .name{
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 70% 30%;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90%;
+    height: 30%;
     background-color: darkcyan
 }
 .about{
+    font-family: Karma;
+    font-size: 20px;
     width: 100%;
-    height: 40%;
+    height: 70%;
+    padding-top: 20%;
     
 }
 .icons{
+    justify-content: center;
+    align-items: center;
+    place-self: center;
 width: 50%;
-height: auto;
+height: 90%;
 display: grid;
-grid-template-columns: repeat(4, 20%);
+grid-template-columns: repeat(5, 25%);
 gap: 1rem;
+margin-bottom: 10px;
 }
-.icons >div{
+.icon{
+    place-self: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: red;
@@ -91,8 +118,8 @@ gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 80%;
+    width: 50%;
+    height: 60%;
     background-color: chocolate;
 }
 .pic{
@@ -108,18 +135,29 @@ gap: 1rem;
     height: 20%;
     background-color: darkcyan;
     gap: 1rem;
+    place-self: center;
 }
 .button1{
-    width: 20%;
-    height: 100%;
+    margin-left: 36%;
+    place-self: center;
+    text-align: center;
+    padding-top: 10px;
+    width: 12%;
+    height: 20%;
     background-color: blue;
-    border-radius: 30%;
+    border-radius: 20px;
+    font-size: 1rem;
+    
 }
 .button2{
-    width: 20%;
-    height: 100%;
-    background-color: red;
-    border-radius: 30%;
+    padding-top: 10px;
+    place-self: center;
+    text-align: center;
+    width: 12%;
+    height: 20%;
+    background-color: pink;
+    border-radius: 20px;
+    font-size: 1rem;
 }
 
 .section:nth-child(1) {
@@ -136,11 +174,12 @@ gap: 1rem;
     height: 100%;
 }
 .textone{
-    height: 80%;
-    width: 40%;
-    flex: 1;
+    padding: 5%;
+    height: 50%;
+    width: 35%;
     background-color: brown;
     font-size: 16pt;
+    text-align: left;
 }
 
 .texttwo{
@@ -170,7 +209,11 @@ background-color: chartreuse;}
     justify-content: center;
     flex: 1;
     width: 40%;
-    height: 80%;
+    height: 50%;
+    padding: 5%;
+    font-size: 20pt;
+    font-family: Karma;
+    font-weight: medium;
 }
 #arsenal{
     
@@ -194,20 +237,29 @@ background-color: chartreuse;}
     align-items: center;
     width: 100%;
     height: 40%;
-    background-color: lightcoral
+    background-color: lightcoral;
 }
 .skilltitle{
     height: 40%;
-    width: 30%;
-    place-self: center;
+    width: 100%;
     background-color: blue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    place-items: center;
+    font-size: 70pt;
+    font-family: Rancho Regular;
 }
 .skilltext{
+    text-align: center;
+    place-items: center;
     height: 60%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     background-color: red;
+    font-family: Karmara;
+    font-size: 27pt;
 }
 .level{
     display: flex;
