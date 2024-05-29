@@ -416,29 +416,33 @@ font-size: 10pt;
 }
 #mfmpic{
     display: grid;
-    grid-template-rows: 80% 16%;
+    grid-template-rows: 80% 20%;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 90%;
+    width: 60%;
+    height: 100%;
     background-color: pink;
 }
 .navbar {
     background-color: #333;
-    
+    font-size: 20pt;
     place-self: center;
     width: fit-content;
-    top: 0;
-    left: 0;
+    border-radius: 24px;
     z-index: 1000;
+    height: 35%;
+    gap: 1rem;
 }
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 14px 20px;
+    gap: 1%;
+    padding: 14px 14px;
     text-decoration: none;
+    font-size: 20pt;
+    border-radius: 30px;
 }
 .icon-container {
     visibility: hidden;
@@ -448,6 +452,7 @@ font-size: 10pt;
     color: black;
 }
 .slid{
+    width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -509,6 +514,8 @@ font-size: 10pt;
     height: 50%;
     background-color: chocolate;
     margin-left: 5%;
+    font-size: 15pt;
+    text-align: left;
 }
 
 .section:nth-child(6) {
@@ -518,7 +525,7 @@ font-size: 10pt;
 
 #section7{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -530,15 +537,20 @@ font-size: 10pt;
 .vibestext{
     place-self: center;
     display: flex;
-    width: 50%;
-    height: 40%;
+    width: 30%;
+    height: 50%;
     background-color: blueviolet;
+    margin-left: 5%;
+    font-size: 15pt;
+    font-family: Karma;
+    text-align: left;
 }
 .vibesbook{
     display: flex;
-    width: 95%;
-    height: 60%;
+    width: 65%;
+    height: 100%;
     background-color: brown;
+    margin-right: 5%;
 }
 .section:nth-child(7) {
     background-color: #2ecc71;
