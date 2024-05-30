@@ -138,6 +138,7 @@ margin-bottom: 10px;
     gap: 1rem;
     place-self: center;
     text-align: center;
+    font-family: Auster; font-size: 10pt; text-align: center; justify-content: center; margin-left: 12%;
 }
 
 .section:nth-child(1) {
@@ -157,9 +158,9 @@ margin-bottom: 10px;
     height: 50%;
     width: 30%;
     background-color: brown;
-    font-size: 16pt;
     text-align: left;
-    margin-left: 5%;
+    margin-left: 5%;font-size: 15pt; font-family: Karma;
+
 }
 
 .texttwo{
@@ -198,6 +199,13 @@ margin-right: 5%;
 .eish2{
     display: flex;
     flex-direction: column;
+    gap: none;
+}
+.eish2 >h1{
+    font-family: Rancho; font-size: 50pt;
+}
+.esih2 >p{
+    font-family: Karma; font-size: 15pt; text-align:left;
 }
 #arsenal{
     
@@ -372,12 +380,16 @@ font-size: 10pt;
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 50%;
+    height: 60%;
     background-color: red;
     font-size: 17pt;
-    padding: 17px;
-    margin-left: 2%;
     margin-left: 5%;
+}
+#mvtext >h1{
+    font-family: Rancho; font-size: 50pt; align-self: flex-start;
+}
+#mvtext >p{
+    font-family: Karma; font-size: 15pt; align-self: flex-start;
 }
 
 .section:nth-child(4) {
@@ -477,23 +489,6 @@ font-size: 10pt;
     justify-content: center;
 
 }
-#yampic{
-    display: flex;
-    flex: 2;
-    width: 50%;
-    height: 90%;
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-right: 5%;
-    gap: 1%;
-}
-.pic5{
-    height: auto;
-} 
-.pic6{
-    height: 100%;
-}
 #yamtext{
     
     display: flex;
@@ -508,6 +503,23 @@ font-size: 10pt;
     font-size: 15pt;
     text-align: left;
     hyphens: none;
+}
+#yampic{
+    display: flex;
+    flex: 2;
+    width: 50%;
+    height: 90%;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 5%;
+    gap: 1%;
+}
+.pic5{
+    height: 100%;
+} 
+.pic6{
+    height: 100%;
 }
 
 .section:nth-child(6) {
@@ -527,6 +539,7 @@ font-size: 10pt;
 }
 
 .vibestext{
+    
     place-self: center;
     display: flex;
     width: 30%;
@@ -537,6 +550,12 @@ font-size: 10pt;
     font-family: Karma;
     text-align: left;
 }
+.vibestext >h1{
+    font-family: Rancho; font-size: 50pt; align-self: flex-start;
+}
+.vibestext >p{
+    font-family: Karma; font-size: 15pt; align-self: flex-start;
+}
 .vibesbook{
     display: flex;
     width: 65%;
@@ -546,11 +565,11 @@ font-size: 10pt;
 }
 .section:nth-child(7) {
     background-color: #2ecc71;
-    flex: 0 0 90vh;
+    flex: 0 0 100vh;
 }
 
 /* Responsive layout */
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     #section1{
         display: grid;
         grid-template-row: 100% 100%;
@@ -558,6 +577,26 @@ font-size: 10pt;
         height: 100%;
         align-items: center;
         justify-content: center;
+    }
+    .welcome{
+        text-align: center;
+  justify-content: center;
+  font-size: 95pt;
+  width: 100%;
+  height: 50%;
+    }
+    .me{
+        font-size: 21pt;
+    }
+    .about{
+        font-size: 18px;
+    }
+    .icons{
+        width: 79%;
+        height: 100%;
+    }
+    .calltoaction{
+        height: 10%;
     }
 
     #intro{
@@ -567,10 +606,11 @@ font-size: 10pt;
     
     }
     #pictuer{
-        height: 100%;
+        height: 200px;
         width: 390px;
-        display: grid;
-        grid-template-columns: 40% 60%;
+    }
+    #picture >img{
+        margin-left: 20%;
     }
     #section2 {
         display: grid;
@@ -580,20 +620,24 @@ font-size: 10pt;
         justify-content: center;
         align-items: center;
         gap: none;
-    
-    
     }
-    .textone{
+    .textone {
         height: 100%;
-        width: 390px;
-        
+        width: 377px;
         background-color: brown;
+        font-size: 12pt; font-family: Karma;
+        padding: 10px;
+        margin-right: 36px;
     }
-    
     .texttwo{
-        height: 100%;
-        width: 390px;
-    background-color: chartreuse;}
+        height: 55%;
+        width: 97%;
+        background-color: chartreuse;
+        margin-bottom: 62%;
+    }
+    .texttwo >img{
+        margin-left: 20%;
+    }
 
     #section3{
         display: grid;
@@ -605,10 +649,39 @@ font-size: 10pt;
         justify-content: center;
     
     }
+
     #career{
         justify-content: center;
         width: 390px;
         height: 250px;
+    }
+    .eish2{
+        padding-bottom: 15%;
+    }
+    .eish2 >h1{
+        font-size: 50pt;
+    }
+    .eish2 >p{
+        font-size: 12pt;
+    }
+    .skill{
+        margin-top: -27%;
+        margin-bottom: -23%;
+        background-color: transparent;
+    }
+    .skilltitle{
+        height: 20%;
+  width: 100%;
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  place-items: center;
+  font-size: 31pt;
+  
+    }
+    .skilltext{
+        height: 34%;
     }
     #arsenal{
         
@@ -621,20 +694,36 @@ font-size: 10pt;
         background-color: indigo;
         gap: 1rem;
     }
+    .big-row{
+        text-align: center;
+  width: 100%;
+  height: 67%;
+  background-color: #9b59b6;
+  font-size: 35pt;
+  margin-top: -5%;
+    }
+
+    .small-row{
+        margin-top: -12%;
+    }
+    .tools{
+        gap: 5%;
+    }
+    .description{
+        font-size: 9pt;
+    }
+    .range{
+        gap: 5%;
+    }
+
     #section4{
+        margin-top: 35%;
         display: grid;
-        grid-template-rows: 250px 600px;
+        grid-template-column: 250px 600px;
         justify-content: center;
         align-items: center;
         width: 100%;
         gap: 5px;
-    }
-    #myvoice{
-        justify-content: center;
-        align-items: center;
-        width: 390px;
-        height: 600px;
-        background-color: orange;
     }
     #mvtext{
         
@@ -643,8 +732,42 @@ font-size: 10pt;
         width: 390px;
         height: 250px;
         background-color: red;
+        margin-top:10%;
+        margin-left: 3%;
+    }
+    #mvtext >h1{
+        font-size: 50pt;
+    }
+    #mvtext >p{
+        font-size: 12pt;
+    }
+    #myvoice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 390px;
+        height: 600px;
+        background-color: orange;
+        margin-top: 15%;
+    }
+    #mv{
+        width: 100%;
+        height: 50%;
+
+    }
+    .fullbody{
+        display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 71%;
+  height: 33%;
+  background-color: yellow;
+  margin-top: -26%;
     }
     #section5{
+        margin-top: 78%;
         display: grid;
         grid-template-rows: 250px 600px;
         justify-content: center;
@@ -660,17 +783,31 @@ font-size: 10pt;
         width: 360px;
         height: 100%;
         background-color: purple;
+        margin-left: 0%;
     }
-    #mfmpic{
+    #mfmtext >h1{
+        font-size: 50pt;
+    }
+    #mfmtext >p{
+        font-size: 12pt;
+    }
+    #mfmpic{display: grid;
+        grid-template-rows: 71% 20%;
         justify-content: center;
         align-items: center;
         width: 390px;
         height: 90%;
         background-color: pink;
+        margin-top: 50%;
+    }
+    #mfmpic .navbar{
+        background-color: transparent;
+        margin-left: 10%;
     }
     #section6{
+        margin-top: 94%;
         display: grid;
-        grid-template-columns: 140px 260px;
+        grid-template-rows: 256px 378px;
         width: 100%;
         height: 100%;
         align-items: center;
@@ -681,16 +818,68 @@ font-size: 10pt;
         place-self: center;
         justify-content: center;
         align-items: center;
-        width: 140px;
-        height: 50%;
+        width: 100%;
+        height: 100%;
         background-color: chocolate;
     }
+    #yamtext >h1{
+        font-size: 50pt;
+    }
+    #yamtext >p{
+        font-size: 12pt;
+    }
     #yampic{
-        place-self: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: cadetblue;
+            gap: 1%;
+            margin-top: 97%;
+    
+    }
+    #yampic .pic5{
+        width: 100%;
+    }
+    #yampic .pic6{
+        width: 100%
+    }
+    #section7{
+        margin-top: 123%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex: 1;
-        width: 260px;
+        align-items: center;
+        width: 100%;
         height: 100%;
-        background-color: cadetblue;
+        background-color: yellow;
+        gap: 5%;
+    }
+    .vibestext{
+        place-self: center;
+        display: flex;
+        width: 100%;
+        height: 50%;
+        background-color: blueviolet;
+        font-size: 15pt;
+        font-family: Karma;
+        text-align: left;
+    }
+    .vibestext >h1{
+        font-family: Rancho;
+        font-size: 40pt;
+    }
+    .vibestext >p{
+        font-family: Karmara;
+        font-size: 12pt;
+    }
+    .vibesbook{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+        margin-left: 5%;
+        margin-top: 0%;
     }
 }
