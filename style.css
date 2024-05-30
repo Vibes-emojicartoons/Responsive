@@ -2,7 +2,7 @@ body{
         font-family: Arial, sans-serif;
         padding: 0;
         box-sizing: border-box;
-        background-color: antiquewhite;
+        background-color: #F6D788;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: white;
+    color: black;
 
 }
 #section1{
@@ -41,7 +41,7 @@ body{
     flex: 1;
     width: 50%;
     height: 65%;
-    background-color: cadetblue;
+    
     
 }
 .eish{
@@ -52,7 +52,6 @@ body{
     align-items: center;
     width: 100%;
     height: 90%;
-    background-color: coral;
     
 }
 .welcome{
@@ -72,7 +71,6 @@ body{
     width: 90%;
     height: 25%;
     font-size: 25pt;
-    background-color: darkcyan;
 }
 .name{
     display: grid;
@@ -81,14 +79,13 @@ body{
     align-items: center;
     width: 100%;
     height: 30%;
-    background-color: darkcyan
 }
 .about{
     font-family: Karma;
     font-size: 20px;
     width: 100%;
     height: 70%;
-    padding-top: 10%;
+    margin-top: -10%;
     text-align: center;
     
 }
@@ -108,7 +105,13 @@ margin-bottom: 10px;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: red;
+    
+    
+}
+.icon a:hover {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
 }
 
 #pictuer{
@@ -121,28 +124,26 @@ margin-bottom: 10px;
     align-items: center;
     width: 50%;
     height: 60%;
-    background-color: chocolate;
 }
 .pic{
     display: flex;
     
     width: 100%;
     height: 80%;
-    background-color: coral;
 }
 .calltoaction{
     display: flex;
     width: 30%;
     height: 5%;
-    background-color: darkcyan;
+    margin-top: 15px;
     gap: 1rem;
     place-self: center;
     text-align: center;
-    font-family: Auster; font-size: 10pt; text-align: center; justify-content: center; margin-left: 12%;
+    font-family: Auster; font-size: 10pt; text-align: center; justify-content: center; margin-left: 0%;
 }
 
 .section:nth-child(1) {
-    background-color: #1abc9c;
+    background-color: transparent;
 }
 
 #section2 {
@@ -157,22 +158,27 @@ margin-bottom: 10px;
 .textone{
     height: 50%;
     width: 30%;
-    background-color: brown;
     text-align: left;
-    margin-left: 5%;font-size: 15pt; font-family: Karma;
+    margin-left: 5%;
+    font-size: 15pt; 
+    font-family: Karma;
 
+}
+.eish2 >p{
+    font-size: 15pt;
+    font-family: Karma;
 }
 
 .texttwo{
     height: 80%;
     width: 40%;
     flex: 1;
-background-color: chartreuse;
+
 margin-right: 5%;
 }
 
 .section:nth-child(2) {
-    background-color: #3498db;
+    background-color: transparent;
     flex: 0 0 80vh;
 }
 
@@ -216,7 +222,6 @@ margin-right: 5%;
     align-items: center;
     width: 60%;
     height: 80%;
-    background-color: indigo;
     gap: 1rem;
     margin-right: 5%;
 }
@@ -230,12 +235,10 @@ margin-right: 5%;
     align-items: center;
     width: 100%;
     height: 40%;
-    background-color: lightcoral;
 }
 .skilltitle{
     height: 40%;
     width: 100%;
-    background-color: blue;
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
@@ -250,7 +253,6 @@ margin-right: 5%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    background-color: red;
     font-family: Karmara;
     font-size: 15pt;
 }
@@ -260,7 +262,6 @@ margin-right: 5%;
     flex-direction: column;
     width: 100%;
     height: 60%;
-    background-color: #1abc9c;
 } 
 .level{
     display: grid;
@@ -271,7 +272,7 @@ margin-right: 5%;
     text-align: center;
     width: 100%;
     height: 100%;
-    background-color: #9b59b6;
+    
     font-size: 40pt;
     font-family: Rancho;
     justify-content: center;
@@ -282,7 +283,7 @@ margin-right: 5%;
     height: 100%;
     display: grid;
     grid-template-columns: 20% 78%;
-    background-color: lightsteelblue;
+    
 }
 .tools{
     width: 100%;
@@ -309,7 +310,7 @@ font-size: 10pt;
 }
 
 .section:nth-child(3) {
-    background-color: #e74c3c;
+    background-color: transparent;
     flex: 0 0 120vh;
 }
 
@@ -331,7 +332,7 @@ font-size: 10pt;
     align-items: center;
     width: 80%;
     height: 80%;
-    background-color: orange;
+    
     margin-right: 5%;
     
 }
@@ -342,7 +343,7 @@ font-size: 10pt;
     align-items: center;
     width: 40%;
     height: 50%;
-    background-color: yellow;
+    
 }
 #mv{
     display: flex;
@@ -352,7 +353,7 @@ font-size: 10pt;
     align-items: center;
     width: 68%;
     height: 100%;
-    background-color: green;
+
 }
 #mv {
     display: grid;
@@ -363,11 +364,11 @@ font-size: 10pt;
     display: grid;
     grid-template-rows: 50% 50%;
     gap: 1rem;
-    background-color: black;
+    
     height: 100%;
 }
 .mv2{
-    background-color: red;
+    
     display: grid;
     grid-template-rows: 50% 50%;
 
@@ -381,7 +382,7 @@ font-size: 10pt;
     align-items: center;
     width: 30%;
     height: 60%;
-    background-color: red;
+    
     font-size: 17pt;
     margin-left: 5%;
 }
@@ -393,7 +394,7 @@ font-size: 10pt;
 }
 
 .section:nth-child(4) {
-    background-color: #9b59b6;
+    background-color: transparent;
 }
 
 #section5{
@@ -413,7 +414,7 @@ font-size: 10pt;
     align-items: center;
     width: 60%;
     height: 50%;
-    background-color: purple;
+    
     margin-left: 5%;
 }
 #mfmpic{
@@ -423,11 +424,10 @@ font-size: 10pt;
     align-items: center;
     width: 60%;
     height: 100%;
-    background-color: pink;
+    
     margin-right: 5%;
 }
 .navbar {
-    background-color: #333;
     font-size: 20pt;
     place-self: center;
     width: fit-content;
@@ -459,7 +459,7 @@ font-size: 10pt;
     height: 100%;
     position: relative;
     overflow: hidden;
-    padding-top: 50px; /* Height of the navbar */
+    padding-top: 50px; 
 }
 .sec {
     height: 100%;
@@ -476,7 +476,7 @@ font-size: 10pt;
     opacity: 1;
 }
 .section:nth-child(5) {
-    background-color: #f1c40f;
+    background-color: transparent;
     flex: 0 0 70vh;
 }
 
@@ -498,7 +498,6 @@ font-size: 10pt;
     align-items: center;
     width: 40%;
     height: 52%;
-    background-color: chocolate;
     margin-left: 5%;
     font-size: 15pt;
     text-align: left;
@@ -509,7 +508,7 @@ font-size: 10pt;
     flex: 2;
     width: 50%;
     height: 90%;
-    background-color: cadetblue;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-right: 5%;
@@ -523,7 +522,7 @@ font-size: 10pt;
 }
 
 .section:nth-child(6) {
-    background-color: #e67e22;
+    background-color: transparent;
     flex: 0 0 80vh;
 }
 
@@ -534,7 +533,6 @@ font-size: 10pt;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: yellow;
     gap: 5%;
 }
 
@@ -544,7 +542,6 @@ font-size: 10pt;
     display: flex;
     width: 30%;
     height: 50%;
-    background-color: blueviolet;
     margin-left: 5%;
     font-size: 15pt;
     font-family: Karma;
@@ -560,11 +557,10 @@ font-size: 10pt;
     display: flex;
     width: 65%;
     height: 100%;
-    background-color: brown;
     margin-right: 5%;
 }
 .section:nth-child(7) {
-    background-color: #2ecc71;
+    background-color: transparent;
     flex: 0 0 100vh;
 }
 
@@ -597,12 +593,13 @@ font-size: 10pt;
     }
     .calltoaction{
         height: 10%;
+        margin-left: -2%;
     }
 
     #intro{
         height: 100%;
         width: 390px;
-        background-color: red;
+        
     
     }
     #pictuer{
@@ -624,7 +621,6 @@ font-size: 10pt;
     .textone {
         height: 100%;
         width: 377px;
-        background-color: brown;
         font-size: 12pt; font-family: Karma;
         padding: 10px;
         margin-right: 36px;
@@ -632,7 +628,6 @@ font-size: 10pt;
     .texttwo{
         height: 55%;
         width: 97%;
-        background-color: chartreuse;
         margin-bottom: 62%;
     }
     .texttwo >img{
@@ -672,7 +667,6 @@ font-size: 10pt;
     .skilltitle{
         height: 20%;
   width: 100%;
-  background-color: blue;
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
@@ -691,14 +685,12 @@ font-size: 10pt;
         align-items: center;
         width: 390px;
         height: 605px;
-        background-color: indigo;
         gap: 1rem;
     }
     .big-row{
         text-align: center;
   width: 100%;
   height: 67%;
-  background-color: #9b59b6;
   font-size: 35pt;
   margin-top: -5%;
     }
@@ -731,7 +723,6 @@ font-size: 10pt;
         align-items: center;
         width: 390px;
         height: 250px;
-        background-color: red;
         margin-top:10%;
         margin-left: 3%;
     }
@@ -748,7 +739,6 @@ font-size: 10pt;
         align-items: center;
         width: 390px;
         height: 600px;
-        background-color: orange;
         margin-top: 15%;
     }
     #mv{
@@ -763,7 +753,6 @@ font-size: 10pt;
   align-items: center;
   width: 71%;
   height: 33%;
-  background-color: yellow;
   margin-top: -26%;
     }
     #section5{
@@ -782,7 +771,6 @@ font-size: 10pt;
         align-items: center;
         width: 360px;
         height: 100%;
-        background-color: purple;
         margin-left: 0%;
     }
     #mfmtext >h1{
@@ -797,7 +785,6 @@ font-size: 10pt;
         align-items: center;
         width: 390px;
         height: 90%;
-        background-color: pink;
         margin-top: 50%;
     }
     #mfmpic .navbar{
@@ -820,7 +807,6 @@ font-size: 10pt;
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: chocolate;
     }
     #yamtext >h1{
         font-size: 50pt;
@@ -834,7 +820,6 @@ font-size: 10pt;
             justify-content: center;
             width: 100%;
             height: 100%;
-            background-color: cadetblue;
             gap: 1%;
             margin-top: 97%;
     
@@ -853,7 +838,6 @@ font-size: 10pt;
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: yellow;
         gap: 5%;
     }
     .vibestext{
@@ -861,7 +845,6 @@ font-size: 10pt;
         display: flex;
         width: 100%;
         height: 50%;
-        background-color: blueviolet;
         font-size: 15pt;
         font-family: Karma;
         text-align: left;
@@ -878,7 +861,6 @@ font-size: 10pt;
         display: flex;
         width: 100%;
         height: 100%;
-        background-color: brown;
         margin-left: 5%;
         margin-top: 0%;
     }
